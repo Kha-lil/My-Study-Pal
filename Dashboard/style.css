@@ -62,13 +62,11 @@
     background-color: #fff;
 }
 
-
 .btn {
     display: block;
     margin-top: 2%;
     
 }
-
 
 
 aside {
@@ -104,7 +102,7 @@ h5 {
 
 .footer {
     height: 60%;
-    background-image: linear-gradient(rgba(72,61,139,0.5), rgba(72,61,139,0.5)), url(/assets/Rectangle\ 9.png) ;
+    background-image: linear-gradient(rgba(72,61,139,0.5), rgba(72,61,139,0.5)), url(/Dashboard/assets/Rectangle\ 9.png) ;
     
 }
 
@@ -135,4 +133,3 @@ h5 {
     color: #fff;
 }
 
-.connect 
