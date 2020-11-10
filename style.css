@@ -66,7 +66,10 @@
 .btn {
     display: block;
     margin-top: 2%;
+    
 }
+
+
 
 aside {
     display: block;
@@ -101,7 +104,6 @@ h5 {
 
 .footer {
     height: 60%;
-    border: 2px solid black;
     background-image: linear-gradient(rgba(72,61,139,0.5), rgba(72,61,139,0.5)), url(/assets/Rectangle\ 9.png) ;
     
 }
@@ -113,7 +115,6 @@ h5 {
 }
 
 .footer-info {
-    display:;
     margin: 2% 5% 5%;
 }
 
@@ -130,7 +131,8 @@ h5 {
 }
 
 .connect {
-    display: inline-block;
+    display: block;
     color: #fff;
-  
 }
+
+.connect 
