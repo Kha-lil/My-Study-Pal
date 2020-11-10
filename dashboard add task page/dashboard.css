@@ -1,0 +1,43 @@
+body{
+  background-color: #A8D2FF;
+  ;
+}
+
+
+div.one, div.two, div.three{
+  width: 32px;
+  height:32px;
+  font-size: 18px;
+  background-color: #6360AA;
+  color: white;
+}
+
+div.question{
+  font-size: 18px;
+  color: #404040;
+}
+
+.btn-back{
+  color: #6360AA;
+  font-size: 12px;
+}
+
+.btn-color{
+  background-color: #6360AA;
+  color: white;
+  font-size: 12px;
+}
+
+.display-none{
+  display: none;
+}
+
+.invisible{
+  height: 0px!important;
+}
+
+div.circle{
+  width: 20px;
+  height: 20px;
+  background: #F2994A;
+}

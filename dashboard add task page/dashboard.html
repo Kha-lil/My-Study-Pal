@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <link rel="stylesheet" href="dashboard.css" />
+  <title>Hello, world!</title>
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <div class="jumbotron col-8 rounded-lg">
+      <div class="container">
+        <h1 class="display-4 font-weight-bold">HELLO JAMES</h1>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#staticBackdrop">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.20007 6.8V11.6H6.80007V6.8H11.6V5.2H6.80007V0.400002H5.20007V5.2H0.400024V6.8H5.20007Z" fill="white"/>
+        </svg>
+        Add Task
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">ADD TASK</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-2">
+              <div class="head d-flex mb-2">
+                <div class="one rounded-circle text-center font-weight-bold mr-3">
+                  1
+                </div>
+                <div class="question">What will you be studying?</div>
+              </div>
+  
+              <div class="ans ml-3 pl-4 border-left">
+                <form id="first-form" class="py-3">
+                  <div class="form-group">
+                    <input type="text" placeholder="Required*" class="form-control w-50 first-question" id="exampleInputEmail1"
+                      aria-describedby="emailHelp" />
+                  </div>
+                  <button id="first-btn" type="button" class="btn btn-primary btn-color border-0 px-3">
+                    NEXT
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="mb-2">
+              <div class="head d-flex mb-2">
+                <div class="two rounded-circle text-center font-weight-bold mr-3">
+                  2
+                </div>
+                <div class="question">What time will you start?</div>
+              </div>
+  
+              <div class="ans ml-3 pl-4 border-left">
+                <form id="second-form" class="py-3 invisible">
+                  <div class="form-group">
+                    <input type="number" placeholder="Required*" class="form-control w-50 second-question" id="exampleInputEmail1"
+                      aria-describedby="emailHelp" required />
+                  </div>
+                  <button id="back-second-btn" type="button" class="btn btn-back mr-3">BACK</button>
+                  <button id="second-btn" type="button" class="btn btn-primary btn-color border-0 px-3">
+                    NEXT
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="mb-2">
+              <div class="head d-flex mb-2">
+                <div class="three rounded-circle text-center font-weight-bold mr-3">
+                  3
+                </div>
+                <div class="question">What time will you end?</div>
+              </div>
+  
+              <div class="ans ml-3 pl-4 border-left">
+                <form id="third-form" class="py-3 display-none">
+                  <div class="form-group">
+                    <input type="number" placeholder="Required*" class="form-control w-50 third-question" id="exampleInputEmail1"
+                      aria-describedby="emailHelp" />
+                  </div>
+                  <button id="back-third-btn" type="button" class="btn btn-back mr-3">BACK</button>
+                  <button id="third-btn" type="button" class="btn btn-primary btn-color border-0 px-3">
+                    NEXT
+                  </button>
+                </form>
+              </div>
+            </div>
+  
+            <div class="review-and-create mt-3 display-none">
+              <h4 class="mb-3">Review and Create</h4>
+              <p class="font-weight-bold">What will you be studying? <span class="ans-q-1 ml-2"></span></p>
+              <p class="font-weight-bold">What time will you start? <span class="ans-q-2 ml-4"></span></p>
+              <p class="font-weight-bold">What time will you end? <span class="ans-q-3 ml-5"></span></p>
+  
+              <div class="mt-3">
+                <button id="back-RAC-btn" type="button" class="btn btn-back mr-3">BACK</button>
+                <button id="reset" type="button" class="btn btn-back mr-3">RESET</button>
+                <button id="create" type="button" class="btn btn-primary btn-color border-0 px-3">CREATE</button>
+              </div>
+            </div>
+  
+            <div class="success-msg display-none">
+              <h4 class="sucess">Success!!!</h4>
+              <p>You have created a new task!!!</p>
+            </div>
+          </div>
+          
+          <div class="modal-footer border-top-0">
+            <button type="button" class="btn" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card col-7 mt-4">
+        <div class="card-body">
+          <h5 class="card-title">July 16, 2020</h5>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Task</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Progress</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="d-flex"><div class="circle rounded-circle mr-2"></div>Read Maths</th>
+                <td><span class="d-flex justify-content-between"><span>14:00hrs</span><span>16:00hrs</span></span></td>
+                <td colspan="4"><div class="progress">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="d-flex"><div class="circle rounded-circle mr-2"></div>Read Maths</th>
+                <td><span class="d-flex justify-content-between"><span>14:00hrs</span><span>16:00hrs</span></span></td>
+                <td colspan="4">
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="d-flex"><div class="circle rounded-circle mr-2"></div>Read Maths</th>
+                <td><span class="d-flex justify-content-between"><span>14:00hrs</span><span>16:00hrs</span></span></td>
+                <td colspan="4">
+                  <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+  
+  
+        </div>
+      </div>
+      <div class="card col-4 mt-4 ml-3">
+        <div class="card-body">
+          <h5 class="card-title">July 16, 2020</h5>
+  
+  
+        </div>
+
+    </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <script src="addTask.js"></script>
+</body>
+
+</html>
