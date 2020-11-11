@@ -1,8 +1,23 @@
 body{
   background-color: #A8D2FF;
-  ;
 }
 
+.p-container{
+  margin: 0 40px 0 100px;
+}
+
+.jumbotron{
+  background-image: url('./images/Rectangle\ 38.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.calendar{
+  min-height: 200px;
+  max-width: 413px;
+  margin: auto;
+}
 
 div.one, div.two, div.three{
   width: 32px;
@@ -34,6 +49,19 @@ div.question{
 
 .invisible{
   height: 0px!important;
+}
+
+.c-progress{
+  max-width: 610px;
+}
+
+.c-completed{
+  max-width: 505px;
+  min-height: 250px;
+}
+
+.card-title{
+  color: #6360AA;
 }
 
 div.circle{

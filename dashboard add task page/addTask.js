@@ -46,6 +46,8 @@ let create = document.querySelector('#create');
 
 let success = document.querySelector('.success-msg');
 
+let close = document.querySelector('#btn-close');
+
 
 
 //============= functionality ==========
@@ -96,17 +98,26 @@ backRacBtn.addEventListener('click', function () {
 })
 
 reset.addEventListener('click', function () {
+  formReset();
+})
+
+create.addEventListener('click', function () {
+  reviewAndCreate.classList.add('display-none');
+  success.classList.remove('display-none');
+})
+
+close.addEventListener('click', function () {
+  formReset();
+})
+
+function formReset () {
   reviewAndCreate.classList.add('display-none');
   firstForm.classList.remove('invisible');
   one.innerHTML = `1`;
   two.innerHTML = `2`;
   three.innerHTML = `3`;
-})
-
-create.addEventListener('click', function () {
-  reviewAndCreate.classList.add('display-none');
-  success.classList.remove('display-none')
-})
+  success.classList.add('display-none');
+}
 
 function showAnswer () {
   ansQ1.textContent = firstAnswer;

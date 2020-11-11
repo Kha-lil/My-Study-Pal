@@ -15,19 +15,33 @@
 
 <body>
 
-  <div class="container mt-5">
-    <div class="jumbotron col-8 rounded-lg">
-      <div class="container">
-        <h1 class="display-4 font-weight-bold">HELLO JAMES</h1>
+  <div class="p-container mt-5">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="jumbotron">
+          <div class="container">
+            <h1 class="display-4 font-weight-bold pb-5 text-white">HELLO JAMES</h1>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#staticBackdrop">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.20007 6.8V11.6H6.80007V6.8H11.6V5.2H6.80007V0.400002H5.20007V5.2H0.400024V6.8H5.20007Z" fill="white"/>
+            </svg>
+            Add Task
+        </button>
       </div>
+      <div class="col-lg-1"></div>
+      <div class="card col-lg-4 mt-3 calendar">
+        <div class="card-body">
+          <h5 class="card-title font-weight-bold">Calendar</h5>
+  
+  
+        </div>
+      </div>
+
     </div>
 
-    <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#staticBackdrop">
-      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M5.20007 6.8V11.6H6.80007V6.8H11.6V5.2H6.80007V0.400002H5.20007V5.2H0.400024V6.8H5.20007Z" fill="white"/>
-        </svg>
-        Add Task
-    </button>
+    
 
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
@@ -124,7 +138,7 @@
           </div>
           
           <div class="modal-footer border-top-0">
-            <button type="button" class="btn" data-dismiss="modal">
+            <button id="btn-close" type="button" class="btn" data-dismiss="modal">
               Close
             </button>
           </div>
@@ -132,10 +146,10 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="card col-7 mt-4">
+    <div class="d-flex flex-column flex-lg-row mb-3">
+      <div class="card col-lg-7 mt-4 mr-3 c-progress">
         <div class="card-body">
-          <h5 class="card-title">July 16, 2020</h5>
+          <h5 class="card-title font-weight-bold">July 16, 2020</h5>
           <table class="table table-hover">
             <thead>
               <tr>
@@ -180,14 +194,14 @@
   
         </div>
       </div>
-      <div class="card col-4 mt-4 ml-3">
+      <div class="card col-lg-5 mt-4 c-completed">
         <div class="card-body">
-          <h5 class="card-title">July 16, 2020</h5>
+          <h5 class="card-title font-weight-bold pb-3 border-bottom">Completed Tasks</h5>
   
   
         </div>
 
-    </div>
+      </div>
     </div>
   </div>
 
