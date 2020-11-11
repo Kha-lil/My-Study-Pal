@@ -10,6 +10,7 @@ body{
   margin: 0 auto;
   max-width: 450px;
 }
+
 /* End of General Styling */
 
 /* Nav Styling */
@@ -95,6 +96,7 @@ textarea {
   margin-top: 6px;
   margin-bottom: 20px;
   background-color: #e5e5e5;
+  outline: none;
 }
 button[type="submit"] {
   background-color: rgba(99, 96, 170, 1);
@@ -107,6 +109,7 @@ button[type="submit"] {
   text-transform: uppercase;
   display: block;
   margin: 0 auto;
+  margin-top: 20px;
 }
 .name,
 .email {
@@ -122,3 +125,89 @@ textarea {
   height: 150px;
 }
 /* End of Form Styling*/
+
+@media only screen and (min-width: 280px) and (max-width: 768px){
+  .hide-on-mobile{
+    display: none;
+  }
+  .logo {
+    width: 50px;
+  }
+  .topnav {
+    overflow: hidden;
+    position: relative;
+  }   
+  .topnav a {
+    color: #B3D4E0;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(99, 96, 170, 1);
+    padding: 10px 16px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  
+  .topnav #myLinks a:hover {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+  }
+  .nav_mobile {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+  }    
+  .nav_mobile a {
+    padding: 20px 8px 20px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; 
+  }
+  .nav_mobile .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }    
+  .container{
+    padding: 25px;
+  }
+  .container .heading {
+    padding: 10px 50px;
+    font-size: 15px;
+  }
+  .nav--list {
+    margin-left: 0;
+    padding: 7px 60px;
+  }
+  
+  .nav--list li {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 769px){
+  .hide-on-desktop{
+    display: none;
+  }
+}
