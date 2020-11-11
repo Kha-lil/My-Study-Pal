@@ -13,37 +13,67 @@
   </head>
   <body>
     <!--Navigation Section -->
-    <nav id="nav" class="nav--flex nav--row">
-      <div class="logo nav--flex nav--col">
-        <img src="images/Logo.svg" alt="logo" class="logo" />
-      </div>
+    <nav id="nav" >
+      <div class="nav--flex nav--row hide-on-mobile">
+        <div class="logo nav--flex nav--col">
+          <img src="images/Logo.svg" alt="logo" class="logo" />
+        </div>
 
-      <div id="nav-icon">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <ul class="nav--flex nav--row nav--list">
-        <li>
-          <a class="links" href="#">Home</a>
-        </li>
-        <li>
-          <a class="links" href="#">Contact us</a>
-        </li>
-        <li>
-          <a class="links" href="#">About Us</a>
-        </li>
-      </ul>
-      <div class="sub--link">
+        <div id="nav-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
         <ul class="nav--flex nav--row nav--list">
-          <li id="log--in">
-            <a class="links" href="#">Log in</a>
+          <li>
+            <a class="links" href="#">Home</a>
           </li>
           <li>
-            <a class="links" href="#">Sign up</a>
+            <a class="links" href="#">Contact us</a>
+          </li>
+          <li>
+            <a class="links" href="#">About Us</a>
           </li>
         </ul>
+
+        <div class="sub--link">
+          <ul class="nav--flex nav--row nav--list">
+            <li id="log--in">
+              <a class="links" href="#">Log in</a>
+            </li>
+            <li>
+              <a class="links" href="#">Sign up</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
+      <div class="hide-on-desktop">
+        <div class="topnav">
+          <a href="#"><img src="images/Logo.svg" alt="logo" class="logo" /></a>
+          <div id="myLinks" class="nav_mobile">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#home">Home</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#about">About Us</a>
+            <div class="sub--link">
+              <ul class="nav--flex nav--col nav--list">
+                <li id="log--in">
+                  <a class="links" href="#">Log in</a>
+                </li>
+                <li>
+                  <a class="links" href="#">Sign up</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+          <a href="javascript:void(0);" class="icon" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+          </a>
+        </div>     
+      </div>
+
     </nav>
 
     <main class="container">
@@ -73,5 +103,7 @@
         <button type="submit" class="submit_button">Send Message</button>
       </form>
     </main>
+
+    <script src="contact.js"></script>
   </body>
 </html>
