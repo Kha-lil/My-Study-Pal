@@ -3,7 +3,7 @@ body{
 }
 
 .p-container{
-  margin: 0 40px 0 100px;
+  margin: 0 5px 0 5px;
 }
 
 .jumbotron{
@@ -16,7 +16,7 @@ body{
 .calendar{
   min-height: 200px;
   max-width: 413px;
-  margin: auto;
+  margin-left: 15px;
 }
 
 div.one, div.two, div.three{
@@ -68,4 +68,38 @@ div.circle{
   width: 20px;
   height: 20px;
   background: #F2994A;
+}
+
+@media (min-width: 576px) {
+  .p-container{
+    margin: 0 10px 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-container{
+    margin: 0 30px 0 30px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .p-container{
+    margin: 0 40px 0 60px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .p-container{
+    margin: 0 40px 0 100px;
+  }
+
+  .calendar{
+    margin-left: unset;
+  }
+
+  .c-progress{
+    max-width: unset;
+  }
 }
