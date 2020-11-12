@@ -96,3 +96,66 @@ button {
 .button {
    text-align: center;
 }
+
+@media screen and (max-width: 1200px) {
+   .grid {
+      grid-template-columns: 25% 60%;
+   }
+   .upload-btn-wrapper input[type=file] {
+      left: unset;
+   }
+}
+@media screen and (max-width: 950px) {
+   .upload-btn-wrapper input[type=file] {
+      left: unset;
+   }
+   .grid {
+      grid-template-columns: 35% 60%;
+   }
+   .upload-btn-wrapper input[type=file] {
+      left: unset;
+   }
+   .email input {
+      width: 340px;
+   }
+}
+@media screen and (max-width: 650px) {
+   .grid {
+      padding-left: unset;
+      display: unset;
+   }
+   .email-section {
+      display: flex;
+      justify-content: center;
+      grid-template-columns: unset;
+   }
+   .upload-btn-wrapper input[type=file] {
+      left: unset;
+   }
+   .email input, #username {
+       Width: unset;
+   }
+   .username {
+      margin-bottom: 1rem;
+   }
+}
+@media screen and (max-width: 480px) {
+   .grid {
+      display: unset;
+      padding-left: unset;
+   }
+   .email-section {
+      display: flex;
+      justify-content: center;
+      grid-template-columns: unset;
+   }
+   .upload-btn-wrapper input[type=file] {
+      left: unset;
+   }
+   .email input, #username {
+       Width: unset;
+   }
+   .username {
+      margin-bottom: 1rem;
+   }
+}
