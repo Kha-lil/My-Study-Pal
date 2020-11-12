@@ -1,0 +1,47 @@
+
+ .login {
+    text-align: center;
+}
+
+.login span {
+    display: block;
+}
+
+.login .google {
+    font-size: 20px;
+    border: 1px solid #000;
+    padding: 3px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 20px 0 30px;
+}
+
+.form-control {
+    background: rgba(67, 89, 116, 0.25) !important;
+}
+
+.form-control:focus {
+    color: #fff;
+}
+
+.btn {
+    background: #ac8365;
+    border: none;
+    padding: 9px 50px;
+    text-transform: uppercase;
+    margin: 20px auto !important;
+    display: block;
+    align-items: center;
+}
+
+.btn:hover {
+    background: #8a664d;
+    border: none;
+}
+.rem{
+    display: flex;
+    justify-content: space-between;
+}
+.rem a{
+    color: #000;
+}
