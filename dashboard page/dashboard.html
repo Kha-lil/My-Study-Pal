@@ -7,15 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <!-- Bootstrap CSS -->
-  <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
   <link rel="stylesheet" href="dashboard.css" />
-
   <title>Hello, world!</title>
 </head>
 
@@ -31,17 +25,18 @@
         </div>
         <button type="button" class="btn btn-primary mb-3" data-toggle="modal" data-target="#staticBackdrop">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.20007 6.8V11.6H6.80007V6.8H11.6V5.2H6.80007V0.400002H5.20007V5.2H0.400024V6.8H5.20007Z" fill="white"/>
-            </svg>
-            Add Task
+            <path d="M5.20007 6.8V11.6H6.80007V6.8H11.6V5.2H6.80007V0.400002H5.20007V5.2H0.400024V6.8H5.20007Z"
+              fill="white" />
+          </svg>
+          Add Task
         </button>
       </div>
       <div class="col-lg-1"></div>
       <div class="card col-lg-4 calendar">
         <div class="card-body">
           <h5 class="card-title font-weight-bold">Calendar</h5>
-  
-  
+
+
         </div>
       </div>
 
@@ -66,12 +61,12 @@
                 </div>
                 <div class="question">What will you be studying?</div>
               </div>
-  
+
               <div class="ans ml-3 pl-4 border-left">
                 <form id="first-form" class="py-3">
                   <div class="form-group">
-                    <input type="text" placeholder="Required*" class="form-control w-50 first-question" id="exampleInputEmail1"
-                      aria-describedby="emailHelp" />
+                    <input type="text" placeholder="Required*" class="form-control w-50 first-question"
+                      id="exampleInputEmail1" aria-describedby="emailHelp" />
                   </div>
                   <button id="first-btn" type="button" class="btn btn-primary btn-color border-0 px-3">
                     NEXT
@@ -86,12 +81,12 @@
                 </div>
                 <div class="question">What time will you start?</div>
               </div>
-  
+
               <div class="ans ml-3 pl-4 border-left">
                 <form id="second-form" class="py-3 invisible">
                   <div class="form-group">
-                    <input type="number" placeholder="Required*" class="form-control w-50 second-question" id="exampleInputEmail1"
-                      aria-describedby="emailHelp" required />
+                    <input type="number" placeholder="Required*" class="form-control w-50 second-question"
+                      id="exampleInputEmail1" aria-describedby="emailHelp" required />
                   </div>
                   <button id="back-second-btn" type="button" class="btn btn-back mr-3">BACK</button>
                   <button id="second-btn" type="button" class="btn btn-primary btn-color border-0 px-3">
@@ -107,12 +102,12 @@
                 </div>
                 <div class="question">What time will you end?</div>
               </div>
-  
+
               <div class="ans ml-3 pl-4 border-left">
                 <form id="third-form" class="py-3 display-none">
                   <div class="form-group">
-                    <input type="number" placeholder="Required*" class="form-control w-50 third-question" id="exampleInputEmail1"
-                      aria-describedby="emailHelp" />
+                    <input type="number" placeholder="Required*" class="form-control w-50 third-question"
+                      id="exampleInputEmail1" aria-describedby="emailHelp" />
                   </div>
                   <button id="back-third-btn" type="button" class="btn btn-back mr-3">BACK</button>
                   <button id="third-btn" type="button" class="btn btn-primary btn-color border-0 px-3">
@@ -121,26 +116,26 @@
                 </form>
               </div>
             </div>
-  
+
             <div class="review-and-create mt-3 display-none">
               <h4 class="mb-3">Review and Create</h4>
               <p class="font-weight-bold">What will you be studying? <span class="ans-q-1 ml-2"></span></p>
               <p class="font-weight-bold">What time will you start? <span class="ans-q-2 ml-4"></span></p>
               <p class="font-weight-bold">What time will you end? <span class="ans-q-3 ml-5"></span></p>
-  
+
               <div class="mt-3">
                 <button id="back-RAC-btn" type="button" class="btn btn-back mr-3">BACK</button>
                 <button id="reset" type="button" class="btn btn-back mr-3">RESET</button>
                 <button id="create" type="button" class="btn btn-primary btn-color border-0 px-3">CREATE</button>
               </div>
             </div>
-  
+
             <div class="success-msg display-none">
               <h4 class="sucess">Success!!!</h4>
               <p>You have created a new task!!!</p>
             </div>
           </div>
-          
+
           <div class="modal-footer border-top-0">
             <button id="btn-close" type="button" class="btn" data-dismiss="modal">
               Close
@@ -167,42 +162,52 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row" class="d-flex"><div class="circle rounded-circle mr-2"></div>Read Maths</th>
+                <th scope="row" class="d-flex">
+                  <div class="circle rounded-circle mr-2"></div>Read Maths
+                </th>
                 <td><span class="d-flex justify-content-between"><span>14:00hrs</span><span>16:00hrs</span></span></td>
-                <td colspan="4"><div class="progress">
-                  <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <td colspan="4">
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="75"
+                      aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th scope="row" class="d-flex"><div class="circle rounded-circle mr-2"></div>Read Maths</th>
+                <th scope="row" class="d-flex">
+                  <div class="circle rounded-circle mr-2"></div>Read Maths
+                </th>
                 <td><span class="d-flex justify-content-between"><span>14:00hrs</span><span>16:00hrs</span></span></td>
                 <td colspan="4">
                   <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="100"
+                      aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th scope="row" class="d-flex"><div class="circle rounded-circle mr-2"></div>Read Maths</th>
+                <th scope="row" class="d-flex">
+                  <div class="circle rounded-circle mr-2"></div>Read Maths
+                </th>
                 <td><span class="d-flex justify-content-between"><span>14:00hrs</span><span>16:00hrs</span></span></td>
                 <td colspan="4">
                   <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="100"
+                      aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
-  
-  
+
+
         </div>
       </div>
       <div class="card col-lg-5 mt-4 c-completed">
         <div class="card-body">
           <h5 class="card-title font-weight-bold pb-3 border-bottom">Completed Tasks</h5>
-  
-  
+
+
         </div>
 
       </div>

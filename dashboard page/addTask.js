@@ -110,7 +110,7 @@ close.addEventListener('click', function () {
   formReset();
 })
 
-function formReset () {
+function formReset() {
   reviewAndCreate.classList.add('display-none');
   firstForm.classList.remove('invisible');
   one.innerHTML = `1`;
@@ -119,7 +119,7 @@ function formReset () {
   success.classList.add('display-none');
 }
 
-function showAnswer () {
+function showAnswer() {
   ansQ1.textContent = firstAnswer;
   ansQ2.textContent = secondAnswer;
   ansQ3.textContent = thirdAnswer;
