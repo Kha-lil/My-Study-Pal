@@ -78,6 +78,10 @@ input[type=radio] {
    /* width: 2%; */
    /* height: 2em; */
 }
+.txtProfileImgError {
+   position: absolute;
+   color: red;
+}
 #error-message {
    position: absolute;
    margin-top: 1rem;
