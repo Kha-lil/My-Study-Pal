@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="file.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>
+    <form action="" method="" enctype="multipart/form-data" id="myform">
+      <div class="edit-picture">
+        <img src="./images/Vector.png" id="profile-image" alt="profile-picture" srcset="">
+      </div>
+      <div class="upload-btn-wrapper">
+        <button class="uploadFile btn btn-sm" id="uploadbtn">EDIT PICTURE</button>
+        <input id="txtProfileImg" type="file" name="myfile" accept="image/*" class="form-control" value="" title="" />
+        <p class="txtProfileImgError"></p>
+      </div>
+
+      <div class="grid">
+        <div class="username email">
+          <label for="username">Username</label><br>
+          <input type="text" name="username" class="email-input" id="username" required>
+        </div>
+        <div class="email">
+          <label for="email">Email-ID</label><br>
+          <input type="text" name="email" class="email-input" id="emailInput" required><br>
+          <span id="error-message"></span>
+        </div>
+
+      </div>
+      <div class="gender">
+        <input type="radio" id="female" name="gender" value="female" checked>
+        <label for="female" id="female">Female</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+      </div>
+      <div class="button">
+        <a href="../dashboard.html">DONE</a>
+        
+      </div>
+
+    </form>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

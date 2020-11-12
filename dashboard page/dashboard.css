@@ -1,0 +1,282 @@
+body {
+  background-color: #a8d2ff;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Navigation Styling */
+
+.logo {
+  width: 100px;
+  margin: 0 100px 0 50px;
+}
+
+.nav-link {
+  font-weight: 400 !important;
+  color: rgba(99, 96, 170, 1) !important;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 30%;
+  border: 1px solid;
+}
+
+.link {
+  border: 1px solid;
+  border-radius: 30%;
+}
+
+.nav-item {
+  margin: 0 50px;
+}
+
+.dashboard-img{
+  width: 2rem;
+}
+/* End of navigation styling  */
+
+
+
+.p-container {
+  margin: 0 5px 0 5px;
+}
+
+.jumbotron {
+  background-image: url("./images/Rectangle\ 38.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.calendar {
+  min-height: 200px;
+  max-width: 413px;
+  margin-left: 15px;
+}
+
+div.one,
+div.two,
+div.three {
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  background-color: #6360aa;
+  color: white;
+}
+
+div.question {
+  font-size: 18px;
+  color: #404040;
+}
+
+.btn-back {
+  color: #6360aa;
+  font-size: 12px;
+}
+
+.btn-color {
+  background-color: #6360aa;
+  color: white;
+  font-size: 12px;
+}
+
+.display-none {
+  display: none;
+}
+
+.invisible {
+  height: 0px !important;
+}
+
+.c-progress {
+  max-width: 610px;
+}
+
+.c-completed {
+  max-width: 505px;
+  min-height: 250px;
+}
+
+.card-title {
+  color: #6360aa;
+}
+
+div.circle {
+  width: 20px;
+  height: 20px;
+  background: #f2994a;
+}
+
+/* footer styling */
+
+footer {
+  background-image: url("./images/rectangle 9.png");
+  height: 300px;
+  color: #fff;
+}
+.footer {
+  height: 300px;
+  margin: 0;
+  background-color: rgba(99, 96, 170, 0.8);
+  position: relative;
+  padding: 40px;
+}
+.footer-nav {
+  padding-left: 40px;
+  padding-top: 60px;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.list-row {
+  margin: 30px;
+}
+
+.footer-links {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px;
+}
+
+.footer-links:hover {
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  color: white;
+  background-color: rgba(99, 96, 170, 1);
+  border-radius: 30%;
+}
+
+.socials {
+  padding-top: 20px;
+  color: white;
+}
+.fa {
+  padding: 10px;
+  text-align: center;
+  margin: 5px 0px;
+  font-size: 20px;
+  width: 40px;
+  border-radius: 5px;
+}
+.fa-facebook {
+  background-color: white;
+  color: #3b5998;
+  text-decoration: none;
+}
+.fa-twitter {
+  background-color: white;
+  color: #55acee;
+  text-decoration: none;
+  margin-left: 40px;
+}
+.fa:hover {
+  opacity: 0.9;
+}
+
+
+@media (min-width: 300px) and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+  .logo {
+    width: 100px;
+    margin: 0 100px 0 20px;
+  }
+
+  .nav-link {
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  .nav-link:hover {
+    text-decoration: none;
+    transform: translateY(3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    padding: 5px;
+  }
+
+  .link {
+    border: 1px solid;
+    padding: 10px 20px !important;
+    margin-bottom: 15px;
+  }
+
+  footer {
+    height: 373px;
+    padding: 0;
+    color: #fff;
+  }
+  .footer {
+    height: 373px;
+  }
+  .footer-nav {
+    padding-left: 40px;
+    padding-top: 30px;
+  }
+
+  .list-row {
+    margin: 15px;
+  }
+
+  .footer-links {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .socials {
+    padding-top: 20px;
+    color: white;
+  }
+
+  .follow-us {
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 576px) {
+  .p-container {
+    margin: 0 10px 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-container {
+    margin: 0 30px 0 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .p-container {
+    margin: 0 40px 0 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .p-container {
+    margin: 0 40px 0 100px;
+  }
+
+  .calendar {
+    margin-left: unset;
+  }
+
+  .c-progress {
+    max-width: unset;
+  }
+}

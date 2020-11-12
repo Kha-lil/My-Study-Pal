@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Bootstrap CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <!--Custom Stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--Aos Stylesheet-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>MY StudyPal</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="images/Logo.svg" alt="Logo of My Study Pal" class="logo" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact-page/contact.html">Contact us</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link link" href="#">Log in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link" href="#">Sign up</a>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </nav> 
+
+      <!-- Header Description -->
+      <div class="showcase">
+        <div class="row">
+          <div class="col-lg-6 showcase__description">
+            <h2 class="showcase-heading">
+              Take Control of <br />
+              your Study Life
+            </h2>
+            <p class="showcase__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </p>
+            <button type="button" class="button">TRY IT FOR FREE</button>
+          </div>
+          <div class="col-lg-6 showcase__img">
+            <img
+              src="images/study 2.png"
+              alt="Image of Pencils and Pens"
+              class="img__header"
+            />
+            <p class="img__typo">STUDY</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--Section Description-->
+      <section class="part__1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 img__description" data-aos="fade-left">
+              <img
+                src="images/rafiki.png"
+                alt="Sprite of Someone Studying"
+                class="img__1"
+              />
+            </div>
+            <div class="col-lg-6 description">
+              <h2 class="showcase-heading description-heading">
+                Take Control of <br />
+                your Study Life
+              </h2>
+              <p class="showcase__paragraph description-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Section Description-->
+      <section class="part__1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 description">
+              <h2 class="showcase-heading description-heading">
+                Take Control of <br />
+                your Study Life
+              </h2>
+              <p class="showcase__paragraph description-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+            </div>
+            <div
+              class="col-lg-6 img__description img__part2"
+              data-aos="fade-right"
+            >
+              <img
+                src="images/bro.png"
+                alt="Sprite of Someone Studying"
+                class="img__1"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="carousel">
+        <div class="container">
+          <div
+            id="carouselExample"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="3000"
+          >
+            <div class="carousel-inner row w-10 mx-auto" role="listbox">
+              <div class="carousel-item col-md-6 active">
+                <div class="card pt-5 pb-5 pl-4 pr-4">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="carousel-heading">James Freeman</h4>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star"></i></span>
+                </div>
+              </div>
+              <div class="carousel-item col-md-6">
+                <div class="card pt-5 pb-5 pl-4 pr-4">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="carousel-heading">James Freeman</h4>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star fa-star-empty"></i></span>
+                </div>
+              </div>
+              <div class="carousel-item col-md-6">
+                <div class="card pt-5 pb-5 pl-4 pr-4">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="carousel-heading">James Freeman</h4>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star"></i></span>
+                </div>
+              </div>
+              <div class="carousel-item col-md-6">
+                <div class="card pt-5 pb-5 pl-4 pr-4">
+                  <div class="card-body">
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="carousel-heading">James Freeman</h4>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star"></i></span>
+                  <span><i class="fa fa-star fa-star-empty"></i></span>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExample"
+              role="button"
+              data-slide="prev"
+            >
+              <i class="fa fa-chevron-left fa-lg text-muted"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next text-faded"
+              href="#carouselExample"
+              role="button"
+              data-slide="next"
+            >
+              <i class="fa fa-chevron-right fa-lg text-muted"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer Section-->
+    <footer>
+      <div class="row footer">
+        <div class="col-lg-6 footer-nav">
+          <img
+            src="images/Logo.svg"
+            alt="Logo of My StudyPal"
+            class="footer-logo"
+          />
+          <nav class="navs">
+            <ul class="list">
+              <li class="list-row">
+                <a href="#" class="footer-links">Home</a>
+              </li>
+              <li class="list-row">
+                <a href="#" class="footer-links">Contact Us</a>
+              </li>
+              <li class="list-row">
+                <a href="#" class="footer-links">About Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-6 follow-us">
+          <h4>Connect and Follow</h4>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <!-- Bootstrap Script-->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"
+  ></script>
+
+  <!--JavaScript Aos CDN-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 500,
+    });
+  </script>
+
+  <!--Custom Scripts-->
+  <script src="About.js"></script>
+</html>
