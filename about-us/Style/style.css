@@ -270,13 +270,15 @@ footer {
   }
 
   .section-a {
-    padding-left: 10px;
+    padding-left: 5px;
     padding-right: 5px;
+    overflow-x: hidden;
+  }
+  
+  .card-body {
+    padding: 0;
   }
 
-  .img__logo {
-    order: -1;
-  }
 
   .hide-on-mobile {
     display: none;
