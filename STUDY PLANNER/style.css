@@ -1,4 +1,31 @@
+/* Navigation Styling */
 
+.logo {
+  width: 100px;
+  margin: 0 100px 0 50px;
+}
+
+.nav-link {
+  font-weight: 400 !important;
+  color: rgba(99, 96, 170, 1) !important;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 30%;
+  border: 1px solid;
+}
+
+.link {
+  border: 1px solid;
+  border-radius: 30%;
+}
+
+.nav-item {
+  margin: 0 50px;
+}
  .login {
     text-align: center;
 }
@@ -44,4 +71,33 @@
 }
 .rem a{
     color: #000;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+ body {
+    overflow-x: hidden;
+  }
+  .logo {
+    width: 100px;
+    margin: 0 100px 0 20px;
+  }
+
+  .nav-link {
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  .nav-link:hover {
+    text-decoration: none;
+    transform: translateY(3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    padding: 5px;
+  }
+
+  .link {
+    border: 1px solid;
+    padding: 10px 20px !important;
+    margin-bottom: 15px;
+  }
+ 
 }
