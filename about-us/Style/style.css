@@ -275,8 +275,14 @@ footer {
     overflow-x: hidden;
   }
   
+  .card-title {
+    text-align: left;
+  }
+  
+  
   .card-body {
-    padding: 0;
+    padding: 3px;
+    text-align: left;
   }
 
 
