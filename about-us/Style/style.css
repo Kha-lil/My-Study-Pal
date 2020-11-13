@@ -285,6 +285,9 @@ footer {
     text-align: left;
   }
 
+  .card-text{
+    padding-right: 5px;
+  }
 
   .hide-on-mobile {
     display: none;
