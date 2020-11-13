@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+/* End of General Styling */
+
+/* Nav Styling */
+/* #nav {
+  padding: 1.3rem 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav--flex {
+  display: flex;
+}
+
+.nav--col {
+  flex-direction: column;
+}
+
+.nav--row {
+  flex-direction: row;
+}
+
+.logo {
+  width: 70px;
+  margin: 0.5rem 2.5rem 0 2.5rem;
+}
+
+.nav--list {
+  margin-left: 15rem;
+  padding: 2rem 0;
+}
+
+.nav--list li {
+  margin: 0 2.1rem;
+}
+
+.sub--link li{
+  text-transform: uppercase;
+  border: 1px solid  rgba(99, 96, 170, 1);
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.sub--link #log--in{
+  background-color:  rgba(99, 96, 170, 1);
+}
+
+.sub--link #log--in a{
+  color: #fff;
+}
+
+.links {
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+  color: rgba(99, 96, 170, 1);
+}
+
+.links:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-decoration: none;
+} */
+
+.logo {
+  width: 100px;
+  margin: 0 100px 0 50px;
+}
+
+.nav-link {
+  font-weight: 400 !important;
+  color: rgba(99, 96, 170, 1) !important;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 30%;
+  border: 1px solid;
+}
+
+.link {
+  border: 1px solid;
+  border-radius: 30%;
+}
+
+.nav-item {
+  margin: 0 50px;
+}
+
+
+/* End Of Nav Styling */
+
+/* Form Styling*/
+.container .heading {
+  padding: 10px 60px;
+  font-size: 20px;
+  text-align: center;
+  color: rgba(99, 96, 170, 1);
+}
+form .form {
+  padding: 10px 25px;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e5e5;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  background-color: #e5e5e5;
+  outline: none;
+}
+button[type="submit"] {
+  background-color: rgba(99, 96, 170, 1);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.name,
+.email {
+  position: relative;
+}
+.name i,
+.email i {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+}
+textarea {
+  height: 150px;
+}
+/* End of Form Styling*/
+
+@media only screen and (min-width: 280px) and (max-width: 768px){
+  .hide-on-mobile{
+    display: none;
+  }
+  .logo {
+    width: 50px;
+  }
+  .topnav {
+    overflow: hidden;
+    position: relative;
+  }   
+  .topnav a {
+    color: #B3D4E0;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(99, 96, 170, 1);
+    padding: 10px 16px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  
+  .topnav #myLinks a:hover {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+  }
+  .nav_mobile {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+  }    
+  .nav_mobile a {
+    padding: 20px 8px 20px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; 
+  }
+  .nav_mobile .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }    
+  .container{
+    padding: 25px;
+  }
+  .container .heading {
+    padding: 10px 50px;
+    font-size: 15px;
+  }
+  .nav--list {
+    margin-left: 0;
+    padding: 7px 60px;
+  }
+  
+  .nav--list li {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 769px){
+  .hide-on-desktop{
+    display: none;
+  }
+}
+
+footer {
+  background-image: url("./images/rectangle.png");
+  height: 300px;
+  color: #fff;
+}
+.footer {
+  height: 300px;
+  margin: 0;
+  background-color: rgba(99, 96, 170, 0.8);
+  position: relative;
+  padding: 40px;
+}
+.footer-nav {
+  padding-left: 40px;
+  padding-top: 60px;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.list-row {
+  margin: 30px;
+}
+
+.footer-links {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px;
+}
+
+.footer-links:hover {
+  text-decoration: none;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  color: white;
+  background-color: rgba(99, 96, 170, 1);
+  border-radius: 30%;
+}
+
+.socials {
+  padding-top: 20px;
+  color: white;
+}
+.fa {
+  padding: 10px;
+  text-align: center;
+  margin: 5px 0px;
+  font-size: 20px;
+  width: 40px;
+  border-radius: 5px;
+}
+.fa-facebook {
+  background-color: white;
+  color: #3b5998;
+  text-decoration: none;
+}
+.fa-twitter {
+  background-color: white;
+  color: #55acee;
+  text-decoration: none;
+  margin-left: 40px;
+}
+.fa:hover {
+  opacity: 0.9;
+}
+
+
+@media (min-width: 300px) and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+  .logo {
+    width: 100px;
+    margin: 0 100px 0 20px;
+  }
+
+  .nav-link {
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  .nav-link:hover {
+    text-decoration: none;
+    transform: translateY(3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    padding: 5px;
+  }
+
+  .link {
+    border: 1px solid;
+    padding: 10px 20px !important;
+    margin-bottom: 15px;
+  }
+
+  footer {
+    height: 373px;
+    padding: 0;
+    color: #fff;
+  }
+  .footer {
+    height: 373px;
+  }
+  .footer-nav {
+    padding-left: 40px;
+    padding-top: 30px;
+  }
+
+  .list-row {
+    margin: 15px;
+  }
+
+  .footer-links {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .socials {
+    padding-top: 20px;
+    color: white;
+  }
+
+  .follow-us {
+    padding-left: 40px;
+  }
+}
