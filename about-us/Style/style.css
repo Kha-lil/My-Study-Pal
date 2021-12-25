@@ -168,7 +168,7 @@ h5 {
     background-position: top;
   }*/
 footer {
-  background-image: url(../images/rectangle.png);
+  background-image: url(../../asset/images/rectangle.png);
   height: 300px;
   color: #fff;
 }

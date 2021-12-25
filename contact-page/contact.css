@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: 'Open Sans', sans-serif;
 }
 .container {
@@ -104,7 +104,6 @@ li {
   margin: 0 50px;
 }
 
-
 /* End Of Nav Styling */
 
 /* Form Styling*/
@@ -117,7 +116,7 @@ li {
 form .form {
   padding: 10px 25px;
 }
-input[type="text"],
+input[type='text'],
 textarea {
   width: 100%;
   padding: 12px;
@@ -127,7 +126,7 @@ textarea {
   background-color: #e5e5e5;
   outline: none;
 }
-button[type="submit"] {
+button[type='submit'] {
   background-color: rgba(99, 96, 170, 1);
   color: white;
   padding: 12px 20px;
@@ -155,8 +154,8 @@ textarea {
 }
 /* End of Form Styling*/
 
-@media only screen and (min-width: 280px) and (max-width: 768px){
-  .hide-on-mobile{
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+  .hide-on-mobile {
     display: none;
   }
   .logo {
@@ -165,15 +164,15 @@ textarea {
   .topnav {
     overflow: hidden;
     position: relative;
-  }   
+  }
   .topnav a {
-    color: #B3D4E0;
+    color: #b3d4e0;
     padding: 10px 12px;
     text-decoration: none;
     font-size: 17px;
     display: block;
   }
-  
+
   .topnav a.icon {
     display: block;
     position: absolute;
@@ -184,7 +183,7 @@ textarea {
     margin-right: 20px;
     margin-top: 20px;
   }
-  
+
   .topnav #myLinks a:hover {
     background-color: #fff;
     color: black;
@@ -201,15 +200,15 @@ textarea {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    text-align:center;
-  }    
+    text-align: center;
+  }
   .nav_mobile a {
     padding: 20px 8px 20px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s; 
+    transition: 0.3s;
   }
   .nav_mobile .closebtn {
     position: absolute;
@@ -217,8 +216,8 @@ textarea {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }    
-  .container{
+  }
+  .container {
     padding: 25px;
   }
   .container .heading {
@@ -229,20 +228,20 @@ textarea {
     margin-left: 0;
     padding: 7px 60px;
   }
-  
+
   .nav--list li {
     margin-bottom: 15px;
   }
 }
 
-@media only screen and (min-width: 769px){
-  .hide-on-desktop{
+@media only screen and (min-width: 769px) {
+  .hide-on-desktop {
     display: none;
   }
 }
 
 footer {
-  background-image: url("./images/rectangle.png");
+  background-image: url(../../asset/images/rectangle.png);
   height: 300px;
   color: #fff;
 }
@@ -315,7 +314,6 @@ footer {
 .fa:hover {
   opacity: 0.9;
 }
-
 
 @media (min-width: 300px) and (max-width: 500px) {
   body {
